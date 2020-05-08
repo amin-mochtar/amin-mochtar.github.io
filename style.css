@@ -1,0 +1,12 @@
+body {
+    padding: 100px;
+    margin: 50px;
+    background-image: url(edu.jpg);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#calculator {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
