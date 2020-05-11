@@ -3,36 +3,47 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro?sidebar.open&selection.family=Source+Sans+Pro:wght@200">
+    <link rel="stylesheet" href="fonts.googleapis.com/css?family=Inconsolata">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Sederhana</title>
+    <title>My Calculator</title>
 </head>
 
 <body>
-    <div id="calculator">
-        <div id="output">
-            <div class="previous-value"></div>
-            <div class="current-value"></div>
-        </div>
-        <button all-clear class="double-cell">AC</button>
-        <button delete>DEL</button>
-        <button operation>÷</button>
-        <button number>1</button>
-        <button number>2</button>
-        <button number>3</button>
-        <button operation>*</button>
-        <button number>4</button>
-        <button number>5</button>
-        <button number>6</button>
-        <button operation>+</button>
-        <button number>7</button>
-        <button number>8</button>
-        <button number>9</button>
-        <button operation>-</button>
-        <button number>.</button>
-        <button number>0</button>
-        <button equals class="double-cell">=</button>
+    <div class="calculator-grid">
+        <table border="1" cellspacing="0">
+            <tr>
+                <td colspan="4" id="inputLabel">0</td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="clearAll();">AC</button></td>
+                <td><button onclick="backspace();">DEL</button></td>
+                <td><button onclick="operator(/);">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(7);">7</button></td>
+                <td><button onclick="insert(8);">8</button></td>
+                <td><button onclick="insert(9);">9</button></td>
+                <td><button onclick="operator('*');">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(4);">4</button></td>
+                <td><button onclick="insert(5);">5</button></td>
+                <td><button onclick="insert(6);">6</button></td>
+                <td><button onclick="operator('-');">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(1);">1</button></td>
+                <td><button onclick="insert(2);">2</button></td>
+                <td><button onclick="insert(3);">3</button></td>
+                <td><button onclick="operator('+');">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="insert(0);">0</button></td>
+                <td><button onclick="operator('.');">.</button></td>
+                <td><button onclick="equal('=');">=</button></td>
+            </tr>
+        </table>
     </div>
     <script src="script.js"></script>
 </body>
