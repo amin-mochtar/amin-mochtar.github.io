@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url(edu.jpg);
+    background: linear-gradient(to right, green, yellow);
 }
 
 .calculator-grid {
@@ -11,6 +11,12 @@ body {
     height: 500px;
     margin: 75px auto;
     background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
 }
 
 table {
@@ -35,5 +41,5 @@ td {
     vertical-align: bottom;
     text-align: right;
     padding-right: 16px;
-    background-color: #ececec;
+    background-color: #e2caca;
 }
