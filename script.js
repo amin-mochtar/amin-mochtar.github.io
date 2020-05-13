@@ -1,11 +1,11 @@
 var inputLabel = document.getElementById('inputLabel');
 
-function insert(number) {
+function insert(num) {
 
     if (inputLabel.innerHTML == '0') {
-        inputLabel.innerHTML = number;
+        inputLabel.innerHTML = num;
     } else {
-        inputLabel.innerHTML += number;
+        inputLabel.innerHTML += num;
     }
 }
 
